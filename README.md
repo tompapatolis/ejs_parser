@@ -6,5 +6,5 @@ A React Library to do the job
 
 ![EJS Logo](logo.jpg)
 
-###Preview
+### Preview
 You can preview the resulting HTML here: http://react.verdin.io/
