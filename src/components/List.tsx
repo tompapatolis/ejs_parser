@@ -13,13 +13,13 @@ export default function List(props: IProps): JSX.Element {
         case "ordered":
             return <ol>
                 {element.data.items.map((item, index) =>
-                 <li>{item}</li>
+                 <li key={index}>{item}</li>
                 )}
                 </ol>;
         case "unordered":
             return <ul>
                 {element.data.items.map((item, index) =>
-                 <li>{item}</li>
+                 <li key={index}>{item}</li>
                 )}
                 </ul>; 
         default:

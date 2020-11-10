@@ -5,6 +5,9 @@ import Paragraph from './Paragraph';
 import List from './List';
 import Delimiter from './Delimiter';
 import Image from './Image';
+import Quote from './Quote';
+import Embed from './Embed';
+import Code from './Code';
 
 interface IProps {
     readonly element: Element;
@@ -24,6 +27,12 @@ export default function ElementBuilder(props: IProps): JSX.Element {
         return <Image element={element}/>
       case "list":
         return <List element={element}/>
+      case "quote":
+        return <Quote element={element}/>
+      case "embed":
+        return <Embed element={element}/>         
+      case "code":
+        return <Code element={element}/> 
 
       default:
       return <div className="alert alert-warning" role="alert">

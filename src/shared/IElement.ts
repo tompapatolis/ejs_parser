@@ -30,12 +30,19 @@ export interface IDelimiter extends IElement {
     data: {}
 }
 
+export interface IQuote extends IElement {
+    type: "quote";
+    data: {
+        text: string;
+        caption: string;
+        alignment: string;
+    }
+}
+
 export interface IImage extends IElement {
     type: "image";
-    data: {
-        file:  {
-            url: string;
-        }
+    data: {       
+        url            : string;       
         caption        : string;
         withBorder     : boolean;
         stretched      : boolean;
@@ -44,4 +51,23 @@ export interface IImage extends IElement {
 
 }
 
-export type Element = IParagraph | IHeader | IList | IDelimiter | IImage;
+export interface IEmbed extends IElement {
+    type: "embed";
+    data: {
+        service : string;
+        source  : string;
+        embed   : string;
+        width   : number;
+        height  : number;
+        caption : string;
+    }
+}
+
+export interface ICode extends IElement {
+    type: "code";
+    data: {
+        code: string;
+    }
+}
+
+export type Element = IParagraph | IHeader | IList | IDelimiter | IImage | IQuote | IEmbed | ICode;
