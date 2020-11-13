@@ -6,5 +6,15 @@ A React Library to do the job
 
 ![EJS Logo](logo.jpg)
 
+## Supported Plugins
+* Paragraph
+* List
+* Embed (YouTube Service)
+* Header
+* Simple Image
+* Quote
+* Table
+* Delimiter
+
 ### Preview
-You can preview the resulting HTML here: http://react.verdin.io/
+You can preview the resulting HTML here: https://react.verdin.io/
