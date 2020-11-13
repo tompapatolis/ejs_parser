@@ -70,4 +70,11 @@ export interface ICode extends IElement {
     }
 }
 
-export type Element = IParagraph | IHeader | IList | IDelimiter | IImage | IQuote | IEmbed | ICode;
+export interface ITable extends IElement {
+    type: "table";
+    data: {
+        content: string[][];
+    }
+}
+
+export type Element = IParagraph | IHeader | IList | IDelimiter | IImage | IQuote | IEmbed | ICode | ITable;

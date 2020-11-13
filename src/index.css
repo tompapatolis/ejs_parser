@@ -19,7 +19,6 @@ img {
     border:1px solid rgba(0,0,0,.08);
 }
 
-
 header {
     padding: 1.5rem 2rem;
     background: #272C2F;
@@ -81,4 +80,24 @@ pre code {
     font-size: .85rem;
     border-radius: .25rem;   
 
+}
+
+
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+table {
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.15);
+}
+
+td {
+    padding:.5rem 1rem;
+}
+
+tr:first-child {
+    background: #eee;
+    font-weight: bold;
+    color:#333;
 }

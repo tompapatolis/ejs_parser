@@ -8,6 +8,7 @@ import Image from './Image';
 import Quote from './Quote';
 import Embed from './Embed';
 import Code from './Code';
+import Table from './Table';
 
 interface IProps {
     readonly element: Element;
@@ -32,7 +33,9 @@ export default function ElementBuilder(props: IProps): JSX.Element {
       case "embed":
         return <Embed element={element}/>         
       case "code":
-        return <Code element={element}/> 
+        return <Code element={element}/>
+      case "table":
+        return <Table element={element}/>        
 
       default:
       return <div className="alert alert-warning" role="alert">
